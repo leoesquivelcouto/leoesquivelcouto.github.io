@@ -67,8 +67,8 @@
       <div class="secao-corpo prosa">
         <p>Aprendo melhor construindo. Quando uma tarefa repetitiva me incomoda, eu automatizo; quando
         uma instituição perde tempo com papel e planilha, eu tento fazer um sistema. Foi assim que nasceram
-        extensões de navegador que uso no dia a dia, um painel para lares de idosos e o sistema de abonos e
-        atestados que hoje está sendo implantado numa escola.</p>
+        extensões de navegador que uso no dia a dia, um painel para lares de idosos e, com a minha equipe na
+        UCB, o GestClass, sistema de abonos e atestados que hoje está sendo implantado numa escola pública.</p>
         <p>Antes da tecnologia, trabalhei com vendas de celulares e com cerimonial de casamentos, onde
         aprendi a lidar com clientes, prazos apertados e imprevistos.</p>
       </div>
@@ -80,20 +80,21 @@
       <div class="secao-corpo">
         <p class="nota">Cada projeto mostra o status real.</p>
 
-        <article class="projeto destaque" id="abonos">
+        <article class="projeto destaque" id="gestclass">
           <div class="projeto-topo">
-            <h3>Gestão de abonos e atestados</h3>
+            <h3>GestClass</h3>
             <span class="status em-uso">em implantação</span>
           </div>
-          <p class="projeto-resumo">Sistema web para uma escola registrar e acompanhar abonos e atestados de
-            professores, com login, banco de dados e um dashboard para a coordenação.</p>
+          <p class="projeto-resumo">Sistema web para a direção de uma escola pública de educação infantil do DF
+            registrar e organizar abonos, TREs e atestados dos professores. Projeto de extensão da UCB, feito em
+            equipe de quatro pessoas a partir de uma demanda da própria escola.</p>
           <div class="caso">
-            <div><h4>Problema</h4><p>A escola precisava de um lugar único para registrar, consultar e acompanhar abonos e atestados dos professores.</p></div>
-            <div><h4>Decisões</h4><p>Login com controle de acesso, banco de dados relacional e um dashboard pensado para a coordenação.</p></div>
-            <div><h4>Resultado</h4><p>Em implantação na escola, com usuários reais.</p></div>
+            <div><h4>Problema</h4><p>Registros espalhados em papéis e planilhas soltas, difíceis de consultar e de usar nos processos oficiais junto à SEEDF.</p></div>
+            <div><h4>Minha parte</h4><p>Contas que só acessam após aprovação, tela de gestão de usuários, regras de segurança do Firestore no servidor e relatórios em PDF.</p></div>
+            <div><h4>Dados sensíveis</h4><p>Atestado é dado de saúde (LGPD): acesso restrito validado no servidor, coleta mínima, sem diagnóstico nem CID.</p></div>
           </div>
-          <ul class="stack" aria-label="Tecnologias"><li>Banco de dados relacional</li><li>Autenticação</li><li>Dashboard</li></ul>
-          <p class="links nota-links">Código privado: os dados pertencem à escola.</p>
+          <ul class="stack" aria-label="Tecnologias"><li>React</li><li>Vite</li><li>Firebase Auth</li><li>Cloud Firestore</li><li>Security Rules</li><li>GitHub Actions</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/gestclass">Código no GitHub →</a></p>
         </article>
 
         <article class="projeto" id="rumo">
@@ -122,15 +123,6 @@
           <ul class="stack" aria-label="Tecnologias"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
         </article>
 
-        <article class="projeto" id="radar">
-          <div class="projeto-topo">
-            <h3>radar-de-requisitos</h3>
-            <span class="status planejado">planejado</span>
-          </div>
-          <p class="projeto-resumo">Relatório semanal, gerado automaticamente, com as competências mais pedidas em
-            vagas de estágio, a partir dos dados do rumo. Publicado no GitHub Pages.</p>
-          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>pandas</li><li>PostgreSQL</li><li>Jupyter</li><li>GitHub Actions</li></ul>
-        </article>
       </div>
     </section>
 
@@ -146,7 +138,7 @@
           </div>
           <div>
             <h3>Conheço o básico</h3>
-            <ul><li>Docker</li><li>MySQL e SQLite</li><li>Testes com pytest</li><li>Jupyter Notebook</li><li>Redes (Cisco Packet Tracer)</li></ul>
+            <ul><li>React e Firebase (Auth, Firestore)</li><li>Docker</li><li>MySQL e SQLite</li><li>Testes com pytest</li><li>Jupyter Notebook</li><li>Redes (Cisco Packet Tracer)</li></ul>
           </div>
           <div>
             <h3>Estudando agora</h3>
@@ -162,9 +154,9 @@
       <div class="secao-corpo">
         <ol class="registro">
           <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>
-          <li><time>em curso</time><div><h3>Sistema de abonos e atestados</h3><p>Primeiro sistema em implantação com usuários reais, numa escola.</p></div></li>
+          <li><time datetime="2026-10">out 2026</time><div><h3>GestClass</h3><p>Projeto de extensão em equipe: primeiro sistema com usuários reais, numa escola pública do DF.</p></div></li>
           <li><time>acadêmico</time><div><h3>Cuida Mais</h3><p>Dashboard para apoiar o cuidado de idosos em instituições de acolhimento.</p></div></li>
-          <li><time>graduação</time><div><h3>Engenharia de Software</h3><p>6º semestre, com conclusão prevista para 2027.</p></div></li>
+          <li><time>graduação</time><div><h3>Engenharia de Software · UCB</h3><p>Universidade Católica de Brasília, 6º semestre, com conclusão prevista para 2027.</p></div></li>
         </ol>
       </div>
     </section>
