@@ -97,6 +97,23 @@
           <p class="links"><a href="https://github.com/leoesquivelcouto/gestclass">Código no GitHub →</a></p>
         </article>
 
+        <article class="projeto" id="nautilus">
+          <div class="projeto-topo">
+            <h3>Nautilus</h3>
+            <span class="status em-uso">em uso · v1.0</span>
+          </div>
+          <p class="projeto-resumo">Extensão do Chrome que transforma uma lista longa de prompts numa fila de geração
+            de imagens no ChatGPT: cola-se o texto uma vez e cada imagem só é pedida depois que a anterior foi
+            realmente concluída.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>Gerar uma série de imagens exigia colar, esperar e conferir prompt por prompt, dezenas de vezes.</p></div>
+            <div><h4>Decisões</h4><p>Parser que não se confunde com números no texto, estado persistido e conclusão confirmada por vários sinais. Na dúvida, pausa.</p></div>
+            <div><h4>Resultado</h4><p>Fila com pausa, retomada e recuperação após recarga, sem duplicar imagens. 18 testes de unidade e teste de integração em CI.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>JavaScript</li><li>Chrome Extensions (Manifest V3)</li><li>Node.js</li><li>Playwright</li><li>GitHub Actions</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/nautilus">Código no GitHub →</a></p>
+        </article>
+
         <article class="projeto" id="rumo">
           <div class="projeto-topo">
             <h3>rumo</h3>
@@ -113,15 +130,6 @@
           <p class="links"><a href="https://github.com/leoesquivelcouto/rumo">Código no GitHub →</a></p>
         </article>
 
-        <article class="projeto" id="extensoes">
-          <div class="projeto-topo">
-            <h3>Extensões de navegador</h3>
-            <span class="status publicado">concluídas</span>
-          </div>
-          <p class="projeto-resumo">Duas ferramentas de automação: uma gera várias imagens no ChatGPT a partir de
-            um único prompt longo; a outra adiciona recursos ao Cifra Club para facilitar a prática de músicos.</p>
-          <ul class="stack" aria-label="Tecnologias"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
-        </article>
 
       </div>
     </section>
