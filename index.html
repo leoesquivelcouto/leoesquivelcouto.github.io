@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo Esquivel Couto · Engenharia de Software, backend e dados</title>
+  <meta name="description" content="Portfólio de Leonardo Esquivel Couto, estudante de Engenharia de Software em Brasília. Projetos em Python, FastAPI e SQL. Disponível para estágio imediatamente.">
+  <meta property="og:title" content="Leonardo Esquivel Couto · Portfólio">
+  <meta property="og:description" content="Sistemas pequenos para problemas reais, em Python, FastAPI e SQL. Buscando estágio em Brasília ou remoto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leoesquivelcouto.github.io/">
+  <link rel="canonical" href="https://leoesquivelcouto.github.io/">
+  <link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilo.css">
+  <script>
+    // Aplica o tema salvo antes da pintura para evitar "piscar".
+    try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <a class="marca" href="#topo" aria-label="Início">Leonardo Esquivel Couto</a>
+    <nav aria-label="Seções">
+      <ul>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="cv/">Currículo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="tema" id="tema" type="button" aria-label="Alternar tema claro/escuro">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+    </button>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ APRESENTAÇÃO ============ -->
+    <section class="abertura" id="topo">
+      <p class="rotulo">Engenharia de Software · Brasília – DF</p>
+      <h1>Construo sistemas pequenos para <em>problemas reais</em>, e documento o caminho.</h1>
+      <p class="lead">
+        Sou Leonardo, estudante de Engenharia de Software no 6º semestre. Trabalho principalmente com
+        <strong>Python, FastAPI e bancos de dados relacionais</strong>: modelar informação, criar APIs e
+        transformar dados em painéis que alguém realmente usa. Estou buscando um estágio para aprender
+        com um time de verdade.
+      </p>
+      <dl class="ficha">
+        <div><dt>Disponível</dt><dd>Imediatamente</dd></div>
+        <div><dt>Horário</dt><dd>Manhã, tarde ou noite</dd></div>
+        <div><dt>Formato</dt><dd>Presencial, híbrido ou remoto</dd></div>
+        <div><dt>Status</dt><dd><span class="pulso" aria-hidden="true"></span>buscando estágio</dd></div>
+      </dl>
+      <div class="chamadas">
+        <a class="botao" href="#projetos">Ver projetos</a>
+        <a class="botao secundario" href="cv/curriculo.pdf" download>Baixar currículo (PDF)</a>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="secao" id="sobre" aria-labelledby="t-sobre">
+      <header class="secao-cabeca"><span class="num">01</span><h2 id="t-sobre">Sobre</h2></header>
+      <div class="secao-corpo prosa">
+        <p>Aprendo melhor construindo. Quando uma tarefa repetitiva me incomoda, eu automatizo; quando
+        uma instituição perde tempo com papel e planilha, eu tento fazer um sistema. Foi assim que nasceram
+        extensões de navegador que uso no dia a dia, um painel para lares de idosos e o sistema de abonos e
+        atestados que hoje está sendo implantado numa escola.</p>
+        <p>Antes da tecnologia, trabalhei com vendas de celulares e com cerimonial de casamentos, onde
+        aprendi a lidar com clientes, prazos apertados e imprevistos.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="secao" id="projetos" aria-labelledby="t-projetos">
+      <header class="secao-cabeca"><span class="num">02</span><h2 id="t-projetos">Projetos</h2></header>
+      <div class="secao-corpo">
+        <p class="nota">Cada projeto mostra o status real.</p>
+
+        <article class="projeto destaque" id="abonos">
+          <div class="projeto-topo">
+            <h3>Gestão de abonos e atestados</h3>
+            <span class="status em-uso">em implantação</span>
+          </div>
+          <p class="projeto-resumo">Sistema web para uma escola registrar e acompanhar abonos e atestados de
+            professores, com login, banco de dados e um dashboard para a coordenação.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>A escola precisava de um lugar único para registrar, consultar e acompanhar abonos e atestados dos professores.</p></div>
+            <div><h4>Decisões</h4><p>Login com controle de acesso, banco de dados relacional e um dashboard pensado para a coordenação.</p></div>
+            <div><h4>Resultado</h4><p>Em implantação na escola, com usuários reais.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>Banco de dados relacional</li><li>Autenticação</li><li>Dashboard</li></ul>
+          <p class="links nota-links">Código privado: os dados pertencem à escola.</p>
+        </article>
+
+        <article class="projeto" id="rumo">
+          <div class="projeto-topo">
+            <h3>rumo</h3>
+            <span class="status publicado">em desenvolvimento</span>
+          </div>
+          <p class="projeto-resumo">Rastreador de candidaturas que calcula a compatibilidade de cada vaga com as
+            minhas competências e mostra <strong>o que estudar a seguir</strong>, com base no que as vagas mais pedem.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>Vagas espalhadas em abas e planilhas, prazos perdidos e nenhuma visão dos requisitos que se repetem.</p></div>
+            <div><h4>Decisões</h4><p>FastAPI com validação em Pydantic; SQL escrito à mão, sem ORM; pontuação explicável em vez de IA; tudo local.</p></div>
+            <div><h4>Resultado</h4><p>Versão local funcionando, com 36 testes e CI. Publicação no GitHub em etapas, commit a commit.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>FastAPI</li><li>SQLite</li><li>SQL</li><li>pytest</li><li>Docker</li><li>GitHub Actions</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/rumo">Código no GitHub →</a></p>
+        </article>
+
+        <article class="projeto" id="extensoes">
+          <div class="projeto-topo">
+            <h3>Extensões de navegador</h3>
+            <span class="status publicado">concluídas</span>
+          </div>
+          <p class="projeto-resumo">Duas ferramentas de automação: uma gera várias imagens no ChatGPT a partir de
+            um único prompt longo; a outra adiciona recursos ao Cifra Club para facilitar a prática de músicos.</p>
+          <ul class="stack" aria-label="Tecnologias"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+        </article>
+
+        <article class="projeto" id="radar">
+          <div class="projeto-topo">
+            <h3>radar-de-requisitos</h3>
+            <span class="status planejado">planejado</span>
+          </div>
+          <p class="projeto-resumo">Relatório semanal, gerado automaticamente, com as competências mais pedidas em
+            vagas de estágio, a partir dos dados do rumo. Publicado no GitHub Pages.</p>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>pandas</li><li>PostgreSQL</li><li>Jupyter</li><li>GitHub Actions</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ COMPETÊNCIAS ============ -->
+    <section class="secao" id="competencias" aria-labelledby="t-comp">
+      <header class="secao-cabeca"><span class="num">03</span><h2 id="t-comp">Competências</h2></header>
+      <div class="secao-corpo">
+        <p class="nota">Separadas por nível real, sem barras de porcentagem.</p>
+        <div class="niveis">
+          <div>
+            <h3>Uso em projetos</h3>
+            <ul><li>Python</li><li>FastAPI e APIs REST</li><li>SQL e modelagem relacional</li><li>PostgreSQL</li><li>Git e GitHub</li><li>HTML, CSS e JavaScript</li></ul>
+          </div>
+          <div>
+            <h3>Conheço o básico</h3>
+            <ul><li>Docker</li><li>MySQL e SQLite</li><li>Testes com pytest</li><li>Jupyter Notebook</li><li>Redes (Cisco Packet Tracer)</li></ul>
+          </div>
+          <div>
+            <h3>Estudando agora</h3>
+            <ul><li>pandas e análise de dados</li><li>CI com GitHub Actions</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAJETÓRIA ============ -->
+    <section class="secao" id="trajetoria" aria-labelledby="t-traj">
+      <header class="secao-cabeca"><span class="num">04</span><h2 id="t-traj">Trajetória</h2></header>
+      <div class="secao-corpo">
+        <ol class="registro">
+          <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>
+          <li><time>em curso</time><div><h3>Sistema de abonos e atestados</h3><p>Primeiro sistema em implantação com usuários reais, numa escola.</p></div></li>
+          <li><time>acadêmico</time><div><h3>Cuida Mais</h3><p>Dashboard para apoiar o cuidado de idosos em instituições de acolhimento.</p></div></li>
+          <li><time>graduação</time><div><h3>Engenharia de Software</h3><p>6º semestre, com conclusão prevista para 2027.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CURRÍCULO ============ -->
+    <section class="secao" id="curriculo" aria-labelledby="t-cv">
+      <header class="secao-cabeca"><span class="num">05</span><h2 id="t-cv">Currículo</h2></header>
+      <div class="secao-corpo">
+        <p>Uma página, pensada para leitura humana e para sistemas de triagem (ATS).</p>
+        <div class="chamadas">
+          <a class="botao" href="cv/">Ver online</a>
+          <a class="botao secundario" href="cv/curriculo.pdf" download>Baixar PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao contato" id="contato" aria-labelledby="t-contato">
+      <header class="secao-cabeca"><span class="num">06</span><h2 id="t-contato">Contato</h2></header>
+      <div class="secao-corpo">
+        <p class="contato-frase">Tem uma vaga de estágio ou quer conversar sobre um projeto?</p>
+        <ul class="canais">
+          <li><span>E-mail</span><a href="mailto:leonardo.pesquivel.couto21@gmail.com">leonardo.pesquivel.couto21@gmail.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/leoesquivelcouto">github.com/leoesquivelcouto</a></li>
+          <li><span>Local</span><p class="sem-link">Brasília – DF</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Escrito à mão em HTML e CSS. <a href="https://github.com/leoesquivelcouto/leoesquivelcouto.github.io">Código-fonte</a>.</p>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
