@@ -54,8 +54,15 @@
         <p class="sub">React, Vite, Firebase Auth, Cloud Firestore · projeto de extensão UCB, equipe de 4 · github.com/leoesquivelcouto/gestclass</p>
         <ul>
           <li>Sistema web, em implantação numa escola pública do DF, que substitui papéis e planilhas no registro de abonos, TREs e atestados de professores.</li>
-          <li>Implementei contas com aprovação por administrador, gestão de usuários e regras de segurança do Firestore que restringem no servidor o acesso a dados de saúde (LGPD).</li>
-          <li>Desenvolvi os relatórios por professor com exportação em CSV e PDF.</li>
+          <li>Implementei contas com aprovação por administrador, gestão de usuários e regras de segurança do Firestore que restringem no servidor o acesso a dados de saúde (LGPD); relatórios em CSV e PDF.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="linha"><h3>Mesa Posta · API para cerimonial de casamentos</h3><span class="data">11/2026</span></div>
+        <p class="sub">Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, JWT, pytest, Docker · github.com/leoesquivelcouto/mesa-posta</p>
+        <ul>
+          <li>Convidados, confirmação de presença por link único (token guardado só como hash) e check-in por QR code; papéis com JWT.</li>
+          <li>Capacidade das mesas garantida com bloqueio de linha contra acessos simultâneos; 57 testes contra PostgreSQL real (97% de cobertura).</li>
         </ul>
       </div>
       <div class="item">
@@ -70,23 +77,14 @@
         <div class="linha"><h3>CuidaMais · prontuário eletrônico para idosos</h3><span class="data">06/2026</span></div>
         <p class="sub">Next.js, TypeScript, Prisma, SQLite, Tailwind · extensão UCB, equipe de 7 · github.com/leoesquivelcouto/cuida-mais</p>
         <ul>
-          <li>Desenvolvi a aplicação full-stack para cuidadores registrarem sinais vitais de idosos, com alertas clínicos, gráficos e relatório.</li>
-          <li>Autenticação com bcrypt e JWT em cookie HttpOnly; cada cuidador acessa apenas os próprios pacientes.</li>
+          <li>Desenvolvi a aplicação full-stack para cuidadores registrarem sinais vitais de idosos, com alertas clínicos, gráficos e relatório; bcrypt e JWT em cookie HttpOnly.</li>
         </ul>
       </div>
       <div class="item">
-        <div class="linha"><h3>Nautilus · extensão do Chrome para fila de geração de imagens</h3><span class="data">11/2026</span></div>
-        <p class="sub">JavaScript, Chrome Extensions (Manifest V3), Playwright, GitHub Actions · github.com/leoesquivelcouto/nautilus</p>
+        <div class="linha"><h3>Outros projetos</h3><span class="data">11/2026</span></div>
         <ul>
-          <li>Transforma uma lista de prompts numa fila no ChatGPT, com pausa, retomada e recuperação após recarga, sem duplicar envios.</li>
-          <li>Parser robusto a números no texto e estado persistido; 18 testes de unidade e teste de integração em CI. Também fiz uma extensão para o Cifra Club.</li>
-        </ul>
-      </div>
-      <div class="item">
-        <div class="linha"><h3>rumo · rastreador de candidaturas com análise de lacunas</h3><span class="data">11/2026 – atual</span></div>
-        <p class="sub">Python, FastAPI, Pydantic, SQLite, SQL, pytest, Docker, GitHub Actions · github.com/leoesquivelcouto/rumo</p>
-        <ul>
-          <li>API REST e interface web para acompanhar candidaturas, com SQL que ranqueia as competências mais pedidas pelas vagas; 36 testes em CI.</li>
+          <li><strong>Nautilus</strong> (JavaScript, Chrome Extensions MV3, Playwright · github.com/leoesquivelcouto/nautilus): extensão que transforma uma lista de prompts numa fila no ChatGPT, sem duplicar envios; 18 testes e CI. Também fiz uma extensão para o Cifra Club.</li>
+          <li><strong>rumo</strong> (Python, FastAPI, SQLite · github.com/leoesquivelcouto/rumo): rastreador de candidaturas que ranqueia as competências mais pedidas pelas vagas; 36 testes em CI.</li>
         </ul>
       </div>
     </section>
@@ -99,7 +97,7 @@
         <li><strong>Front-end e full-stack:</strong> React, Next.js, TypeScript (básico), Tailwind, Vite</li>
         <li><strong>Bancos de dados:</strong> PostgreSQL, MySQL, SQLite, Cloud Firestore, Prisma ORM; modelagem relacional, CTEs e funções de janela; pandas e ETL</li>
         <li><strong>Ferramentas:</strong> Git, GitHub, Firebase, Docker (básico), GitHub Actions, VS Code, PyCharm, Jupyter Notebook</li>
-        <li><strong>Fundamentos:</strong> programação orientada a objetos, estruturas de dados, testes automatizados (pytest), redes de computadores (Cisco Packet Tracer)</li>
+        <li><strong>Fundamentos:</strong> orientação a objetos, estruturas de dados, testes automatizados (pytest), redes (Cisco Packet Tracer)</li>
       </ul>
     </section>
 

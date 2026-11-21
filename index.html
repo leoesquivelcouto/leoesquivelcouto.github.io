@@ -97,6 +97,23 @@
           <p class="links"><a href="https://github.com/leoesquivelcouto/gestclass">Código no GitHub →</a></p>
         </article>
 
+        <article class="projeto" id="mesa-posta">
+          <div class="projeto-topo">
+            <h3>Mesa Posta</h3>
+            <span class="status publicado">v0.1 · backend</span>
+          </div>
+          <p class="projeto-resumo">API para cerimonial de casamentos: lista de convidados importada da planilha,
+            confirmação de presença por link único, mesas com capacidade garantida e check-in por QR code na
+            entrada. Nasceu da minha experiência trabalhando com cerimonial.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>Lista em planilha circulando por WhatsApp, confirmações uma a uma e recepção procurando nomes numa folha impressa.</p></div>
+            <div><h4>Decisões</h4><p>Regras críticas no PostgreSQL (restrições e chave composta); bloqueio da mesa contra corrida pelo último lugar; token de convite guardado só como hash.</p></div>
+            <div><h4>Resultado</h4><p>57 testes contra PostgreSQL real (97% de cobertura), incluindo concorrência. Interface e validação com um cerimonial são os próximos passos.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Alembic</li><li>JWT</li><li>pytest</li><li>Docker</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/mesa-posta">Código no GitHub →</a></p>
+        </article>
+
         <article class="projeto" id="lupa-da-cota">
           <div class="projeto-topo">
             <h3>Lupa da Cota</h3>
@@ -195,6 +212,7 @@
       <header class="secao-cabeca"><span class="num">04</span><h2 id="t-traj">Trajetória</h2></header>
       <div class="secao-corpo">
         <ol class="registro">
+          <li><time datetime="2026-11">nov 2026</time><div><h3>Mesa Posta</h3><p>API para cerimonial de casamentos com FastAPI, PostgreSQL, migrações e testes de concorrência.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>Lupa da Cota</h3><p>Pipeline de dados públicos da Câmara: ETL em Python, PostgreSQL, SQL analítico e painel.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>
           <li><time datetime="2026-10">out 2026</time><div><h3>GestClass</h3><p>Projeto de extensão em equipe: primeiro sistema com usuários reais, numa escola pública do DF.</p></div></li>
