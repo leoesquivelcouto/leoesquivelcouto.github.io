@@ -97,6 +97,23 @@
           <p class="links"><a href="https://github.com/leoesquivelcouto/gestclass">Código no GitHub →</a></p>
         </article>
 
+        <article class="projeto destaque" id="pergunte-a-lei">
+          <div class="projeto-topo">
+            <h3>Pergunte à Lei</h3>
+            <span class="status publicado">v0.1 · IA aplicada</span>
+          </div>
+          <p class="projeto-resumo">Responde dúvidas sobre a Lei do Estágio, a LGPD e o Código de Defesa do Consumidor
+            sempre citando o artigo, e se recusa quando a pergunta não está nessas leis. A qualidade da busca é
+            medida com 48 perguntas escritas à mão.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>A resposta está na lei, mas com outras palavras ("recesso", não "férias"); um chatbot genérico pode inventar o artigo.</p></div>
+            <div><h4>Decisões</h4><p>Divisão por artigo; busca híbrida (PostgreSQL full-text + embeddings locais); o Claude só pode citar artigos encontrados, e o código confere cada citação.</p></div>
+            <div><h4>Resultado</h4><p>Comparei 3 modelos no CI: o melhor encontra o artigo certo entre os 5 primeiros em 98% das perguntas (MRR 0,85) e acerta 46 de 48 decisões de responder ou recusar.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>RAG</li><li>Embeddings</li><li>PostgreSQL</li><li>Claude API</li><li>FastAPI</li><li>pytest</li><li>GitHub Actions</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/pergunte-a-lei">Código no GitHub →</a></p>
+        </article>
+
         <article class="projeto" id="mesa-posta">
           <div class="projeto-topo">
             <h3>Mesa Posta</h3>
@@ -212,6 +229,7 @@
       <header class="secao-cabeca"><span class="num">04</span><h2 id="t-traj">Trajetória</h2></header>
       <div class="secao-corpo">
         <ol class="registro">
+          <li><time datetime="2026-11">nov 2026</time><div><h3>Pergunte à Lei</h3><p>RAG sobre legislação com citação conferida e avaliação medida de três modelos de embedding.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>Mesa Posta</h3><p>API para cerimonial de casamentos com FastAPI, PostgreSQL, migrações e testes de concorrência.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>Lupa da Cota</h3><p>Pipeline de dados públicos da Câmara: ETL em Python, PostgreSQL, SQL analítico e painel.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>

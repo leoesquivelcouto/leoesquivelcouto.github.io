@@ -58,31 +58,31 @@
         </ul>
       </div>
       <div class="item">
+        <div class="linha"><h3>Pergunte à Lei · respostas sobre legislação com citação</h3><span class="data">11/2026</span></div>
+        <p class="sub">Python, embeddings, PostgreSQL, Claude API, FastAPI, pytest, GitHub Actions · github.com/leoesquivelcouto/pergunte-a-lei</p>
+        <ul>
+          <li>RAG sobre a Lei do Estágio, a LGPD e o CDC: divisão por artigo, busca híbrida e citação conferida pelo código; recusa perguntas fora das leis.</li>
+          <li>Avaliação com 48 perguntas no CI comparando 3 modelos de embedding: artigo certo no top 5 em 98% (MRR 0,85).</li>
+        </ul>
+      </div>
+      <div class="item">
         <div class="linha"><h3>Mesa Posta · API para cerimonial de casamentos</h3><span class="data">11/2026</span></div>
         <p class="sub">Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, JWT, pytest, Docker · github.com/leoesquivelcouto/mesa-posta</p>
         <ul>
-          <li>Convidados, confirmação de presença por link único (token guardado só como hash) e check-in por QR code; papéis com JWT.</li>
-          <li>Capacidade das mesas garantida com bloqueio de linha contra acessos simultâneos; 57 testes contra PostgreSQL real (97% de cobertura).</li>
+          <li>Convidados, confirmação por link único (token só como hash), check-in por QR code e papéis com JWT; capacidade das mesas garantida com bloqueio de linha contra acessos simultâneos; 57 testes (97% de cobertura).</li>
         </ul>
       </div>
       <div class="item">
         <div class="linha"><h3>Lupa da Cota · pipeline de dados dos gastos parlamentares</h3><span class="data">11/2026</span></div>
         <p class="sub">Python, pandas, PostgreSQL, SQL, Streamlit, pytest, Docker, GitHub Actions · github.com/leoesquivelcouto/lupa-da-cota</p>
         <ul>
-          <li>ETL idempotente que carrega 442 mil despesas públicas da Câmara em PostgreSQL, uma transação por ano, sem dados pessoais de terceiros (LGPD).</li>
-          <li>8 consultas SQL com CTEs, funções de janela e percentis (gastos fora do padrão por mediana e MAD); painel com filtros; 33 testes em CI.</li>
-        </ul>
-      </div>
-      <div class="item">
-        <div class="linha"><h3>CuidaMais · prontuário eletrônico para idosos</h3><span class="data">06/2026</span></div>
-        <p class="sub">Next.js, TypeScript, Prisma, SQLite, Tailwind · extensão UCB, equipe de 7 · github.com/leoesquivelcouto/cuida-mais</p>
-        <ul>
-          <li>Desenvolvi a aplicação full-stack para cuidadores registrarem sinais vitais de idosos, com alertas clínicos, gráficos e relatório; bcrypt e JWT em cookie HttpOnly.</li>
+          <li>ETL idempotente com 442 mil despesas públicas em PostgreSQL (sem dados pessoais de terceiros); 8 consultas com CTEs, funções de janela e percentis, incluindo gastos fora do padrão; painel e 33 testes em CI.</li>
         </ul>
       </div>
       <div class="item">
         <div class="linha"><h3>Outros projetos</h3><span class="data">11/2026</span></div>
         <ul>
+          <li><strong>CuidaMais</strong> (Next.js, TypeScript, Prisma · extensão UCB, equipe de 7 · github.com/leoesquivelcouto/cuida-mais): prontuário de sinais vitais de idosos com alertas, gráficos e relatório; desenvolvi a aplicação.</li>
           <li><strong>Nautilus</strong> (JavaScript, Chrome Extensions MV3, Playwright · github.com/leoesquivelcouto/nautilus): extensão que transforma uma lista de prompts numa fila no ChatGPT, sem duplicar envios; 18 testes e CI. Também fiz uma extensão para o Cifra Club.</li>
           <li><strong>rumo</strong> (Python, FastAPI, SQLite · github.com/leoesquivelcouto/rumo): rastreador de candidaturas que ranqueia as competências mais pedidas pelas vagas; 36 testes em CI.</li>
         </ul>
@@ -93,7 +93,7 @@
       <h2>Competências técnicas</h2>
       <ul class="competencias">
         <li><strong>Linguagens:</strong> Python, SQL, JavaScript, HTML, CSS</li>
-        <li><strong>Backend e APIs:</strong> FastAPI, APIs REST, Pydantic, Postman</li>
+        <li><strong>Backend e APIs:</strong> FastAPI, APIs REST, Pydantic, Postman; IA aplicada: RAG, embeddings, Claude API</li>
         <li><strong>Front-end e full-stack:</strong> React, Next.js, TypeScript (básico), Tailwind, Vite</li>
         <li><strong>Bancos de dados:</strong> PostgreSQL, MySQL, SQLite, Cloud Firestore, Prisma ORM; modelagem relacional, CTEs e funções de janela; pandas e ETL</li>
         <li><strong>Ferramentas:</strong> Git, GitHub, Firebase, Docker (básico), GitHub Actions, VS Code, PyCharm, Jupyter Notebook</li>
