@@ -117,18 +117,18 @@
         <article class="projeto" id="mesa-posta">
           <div class="projeto-topo">
             <h3>Mesa Posta</h3>
-            <span class="status publicado">v0.1 · backend</span>
+            <span class="status publicado">v1.0 · aplicativo completo</span>
           </div>
-          <p class="projeto-resumo">API para cerimonial de casamentos: lista de convidados importada da planilha,
-            confirmação de presença por link único, mesas com capacidade garantida e check-in por QR code na
-            entrada. Nasceu da minha experiência trabalhando com cerimonial.</p>
+          <p class="projeto-resumo">Sistema para cerimonial de casamentos: lista de convidados importada da planilha,
+            confirmação de presença pelo celular com link único, mesas com capacidade garantida e check-in por QR code
+            com a câmera na entrada. Nasceu da minha experiência trabalhando com cerimonial.</p>
           <div class="caso">
             <div><h4>Problema</h4><p>Lista em planilha circulando por WhatsApp, confirmações uma a uma e recepção procurando nomes numa folha impressa.</p></div>
-            <div><h4>Decisões</h4><p>Regras críticas no PostgreSQL (restrições e chave composta); bloqueio da mesa contra corrida pelo último lugar; token de convite guardado só como hash.</p></div>
-            <div><h4>Resultado</h4><p>57 testes contra PostgreSQL real (97% de cobertura), incluindo concorrência. Interface e validação com um cerimonial são os próximos passos.</p></div>
+            <div><h4>Decisões</h4><p>Telas renderizadas no servidor, leves no celular; regras críticas no PostgreSQL; bloqueio da mesa contra corrida pelo último lugar; sessão HttpOnly e proteção CSRF.</p></div>
+            <div><h4>Resultado</h4><p>Pronto para uso, com telas para cerimonial, noivos, convidado e recepção; 67 testes (92% de cobertura), incluindo o fluxo inteiro pelas telas.</p></div>
           </div>
-          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Alembic</li><li>JWT</li><li>pytest</li><li>Docker</li></ul>
-          <p class="links"><a href="https://github.com/leoesquivelcouto/mesa-posta">Código no GitHub →</a></p>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Jinja2</li><li>SQLAlchemy</li><li>JavaScript</li><li>pytest</li><li>Docker</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/mesa-posta-app">Aplicativo completo no GitHub →</a> · <a href="https://github.com/leoesquivelcouto/mesa-posta-api">Só a API (amostra de código)</a></p>
         </article>
 
         <article class="projeto" id="lupa-da-cota">
@@ -230,7 +230,7 @@
       <div class="secao-corpo">
         <ol class="registro">
           <li><time datetime="2026-11">nov 2026</time><div><h3>Pergunte à Lei</h3><p>RAG sobre legislação com citação conferida e avaliação medida de três modelos de embedding.</p></div></li>
-          <li><time datetime="2026-11">nov 2026</time><div><h3>Mesa Posta</h3><p>API para cerimonial de casamentos com FastAPI, PostgreSQL, migrações e testes de concorrência.</p></div></li>
+          <li><time datetime="2026-11">nov 2026</time><div><h3>Mesa Posta</h3><p>Aplicativo completo para cerimonial de casamentos: da planilha de convidados ao check-in por QR code.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>Lupa da Cota</h3><p>Pipeline de dados públicos da Câmara: ETL em Python, PostgreSQL, SQL analítico e painel.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>
           <li><time datetime="2026-10">out 2026</time><div><h3>GestClass</h3><p>Projeto de extensão em equipe: primeiro sistema com usuários reais, numa escola pública do DF.</p></div></li>
