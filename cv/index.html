@@ -62,8 +62,8 @@
         <div class="linha"><h3>Lupa da Cota · pipeline de dados dos gastos parlamentares</h3><span class="data">11/2026</span></div>
         <p class="sub">Python, pandas, PostgreSQL, SQL, Streamlit, pytest, Docker, GitHub Actions · github.com/leoesquivelcouto/lupa-da-cota</p>
         <ul>
-          <li>ETL idempotente que carrega 442 mil despesas públicas da Câmara em PostgreSQL (transação por ano, COPY, ~16 s por ano), removendo dados pessoais de terceiros (LGPD).</li>
-          <li>8 consultas analíticas com CTEs, funções de janela e percentis, incluindo detecção de gastos fora do padrão por mediana e MAD; painel com filtros e 33 testes contra PostgreSQL real em CI.</li>
+          <li>ETL idempotente que carrega 442 mil despesas públicas da Câmara em PostgreSQL, uma transação por ano, sem dados pessoais de terceiros (LGPD).</li>
+          <li>8 consultas SQL com CTEs, funções de janela e percentis (gastos fora do padrão por mediana e MAD); painel com filtros; 33 testes em CI.</li>
         </ul>
       </div>
       <div class="item">
