@@ -59,6 +59,14 @@
         </ul>
       </div>
       <div class="item">
+        <div class="linha"><h3>Lupa da Cota · pipeline de dados dos gastos parlamentares</h3><span class="data">11/2026</span></div>
+        <p class="sub">Python, pandas, PostgreSQL, SQL, Streamlit, pytest, Docker, GitHub Actions · github.com/leoesquivelcouto/lupa-da-cota</p>
+        <ul>
+          <li>ETL idempotente que carrega 442 mil despesas públicas da Câmara em PostgreSQL (transação por ano, COPY, ~16 s por ano), removendo dados pessoais de terceiros (LGPD).</li>
+          <li>8 consultas analíticas com CTEs, funções de janela e percentis, incluindo detecção de gastos fora do padrão por mediana e MAD; painel com filtros e 33 testes contra PostgreSQL real em CI.</li>
+        </ul>
+      </div>
+      <div class="item">
         <div class="linha"><h3>CuidaMais · prontuário eletrônico para idosos</h3><span class="data">06/2026</span></div>
         <p class="sub">Next.js, TypeScript, Prisma, SQLite, Tailwind · extensão UCB, equipe de 7 · github.com/leoesquivelcouto/cuida-mais</p>
         <ul>
@@ -71,16 +79,14 @@
         <p class="sub">JavaScript, Chrome Extensions (Manifest V3), Playwright, GitHub Actions · github.com/leoesquivelcouto/nautilus</p>
         <ul>
           <li>Transforma uma lista de prompts numa fila no ChatGPT, com pausa, retomada e recuperação após recarga, sem duplicar envios.</li>
-          <li>Parser robusto a números no texto e estado persistido; 18 testes de unidade e teste de integração em CI.</li>
-          <li>Também desenvolvi uma extensão para o Cifra Club voltada à prática de músicos.</li>
+          <li>Parser robusto a números no texto e estado persistido; 18 testes de unidade e teste de integração em CI. Também fiz uma extensão para o Cifra Club.</li>
         </ul>
       </div>
       <div class="item">
         <div class="linha"><h3>rumo · rastreador de candidaturas com análise de lacunas</h3><span class="data">11/2026 – atual</span></div>
         <p class="sub">Python, FastAPI, Pydantic, SQLite, SQL, pytest, Docker, GitHub Actions · github.com/leoesquivelcouto/rumo</p>
         <ul>
-          <li>API REST e interface web para acompanhar candidaturas, com consultas SQL de agregação que ranqueiam as competências mais pedidas pelas vagas.</li>
-          <li>36 testes automatizados (unidade, banco e API) em integração contínua, com lint e build Docker.</li>
+          <li>API REST e interface web para acompanhar candidaturas, com SQL que ranqueia as competências mais pedidas pelas vagas; 36 testes em CI.</li>
         </ul>
       </div>
     </section>
@@ -91,8 +97,8 @@
         <li><strong>Linguagens:</strong> Python, SQL, JavaScript, HTML, CSS</li>
         <li><strong>Backend e APIs:</strong> FastAPI, APIs REST, Pydantic, Postman</li>
         <li><strong>Front-end e full-stack:</strong> React, Next.js, TypeScript (básico), Tailwind, Vite</li>
-        <li><strong>Bancos de dados:</strong> PostgreSQL, MySQL, SQLite, Cloud Firestore, Prisma ORM; modelagem relacional</li>
-        <li><strong>Ferramentas:</strong> Git, GitHub, Firebase, Docker (básico), VS Code, PyCharm, Jupyter Notebook</li>
+        <li><strong>Bancos de dados:</strong> PostgreSQL, MySQL, SQLite, Cloud Firestore, Prisma ORM; modelagem relacional, CTEs e funções de janela; pandas e ETL</li>
+        <li><strong>Ferramentas:</strong> Git, GitHub, Firebase, Docker (básico), GitHub Actions, VS Code, PyCharm, Jupyter Notebook</li>
         <li><strong>Fundamentos:</strong> programação orientada a objetos, estruturas de dados, testes automatizados (pytest), redes de computadores (Cisco Packet Tracer)</li>
       </ul>
     </section>

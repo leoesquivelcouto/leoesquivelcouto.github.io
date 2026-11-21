@@ -50,9 +50,9 @@ li { margin: 1px 0; }
 
 @page { size: A4; margin: 0; }
 @media print {
-  body { background: #fff; font-size: 9.8pt; line-height: 1.36; }
+  body { background: #fff; font-size: 9.5pt; line-height: 1.33; }
   .barra-tela { display: none; }
-  .folha { box-shadow: none; margin: 0; max-width: none; padding: 11mm 14mm; }
+  .folha { box-shadow: none; margin: 0; max-width: none; padding: 10mm 14mm; }
   section { margin-top: 10px; }
   .item { margin-bottom: 7px; }
   a { color: var(--tinta); }

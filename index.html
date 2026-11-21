@@ -97,6 +97,23 @@
           <p class="links"><a href="https://github.com/leoesquivelcouto/gestclass">Código no GitHub →</a></p>
         </article>
 
+        <article class="projeto" id="lupa-da-cota">
+          <div class="projeto-topo">
+            <h3>Lupa da Cota</h3>
+            <span class="status publicado">v0.1 · roda localmente</span>
+          </div>
+          <p class="projeto-resumo">Pipeline de dados que coleta os gastos da cota parlamentar da Câmara dos Deputados,
+            guarda em PostgreSQL, responde perguntas com SQL e mostra tudo num painel com filtros. Carrega 442 mil
+            despesas de 2024 e 2025.</p>
+          <div class="caso">
+            <div><h4>Problema</h4><p>Os dados são públicos, mas vêm em CSVs de centenas de milhares de linhas, sujos e sem nenhuma resposta pronta.</p></div>
+            <div><h4>Decisões</h4><p>Carga idempotente numa transação por ano; 8 consultas com CTEs e funções de janela; despesas fora do padrão por mediana e MAD; CPF de terceiros nunca chega ao banco.</p></div>
+            <div><h4>Resultado</h4><p>Os dados reais revelaram três problemas que os testes fictícios não pegavam; cada um foi corrigido e virou teste. 33 testes contra PostgreSQL real e CI.</p></div>
+          </div>
+          <ul class="stack" aria-label="Tecnologias"><li>Python</li><li>pandas</li><li>PostgreSQL</li><li>SQL</li><li>Streamlit</li><li>pytest</li><li>Docker</li><li>GitHub Actions</li></ul>
+          <p class="links"><a href="https://github.com/leoesquivelcouto/lupa-da-cota">Código no GitHub →</a></p>
+        </article>
+
         <article class="projeto" id="cuidamais">
           <div class="projeto-topo">
             <h3>CuidaMais</h3>
@@ -178,6 +195,7 @@
       <header class="secao-cabeca"><span class="num">04</span><h2 id="t-traj">Trajetória</h2></header>
       <div class="secao-corpo">
         <ol class="registro">
+          <li><time datetime="2026-11">nov 2026</time><div><h3>Lupa da Cota</h3><p>Pipeline de dados públicos da Câmara: ETL em Python, PostgreSQL, SQL analítico e painel.</p></div></li>
           <li><time datetime="2026-11">nov 2026</time><div><h3>rumo</h3><p>Início do rastreador de candidaturas com FastAPI, SQL, testes automatizados e CI.</p></div></li>
           <li><time datetime="2026-10">out 2026</time><div><h3>GestClass</h3><p>Projeto de extensão em equipe: primeiro sistema com usuários reais, numa escola pública do DF.</p></div></li>
           <li><time datetime="2026-06">jun 2026</time><div><h3>CuidaMais</h3><p>Projeto de extensão: prontuário eletrônico para monitoramento domiciliar de idosos, desenvolvido por mim numa equipe de 7.</p></div></li>
